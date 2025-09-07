@@ -4,15 +4,11 @@ import face_recognition
 import os
 from datetime import datetime
 
-
 KNOWN_FACES_DIR = 'knownfaces'
-
 ATTENDANCE_FILE = 'attendance.csv'
-
 
 known_face_encodings = []
 known_face_names = []
-
 
 def load_known_faces():
     if not os.path.exists(KNOWN_FACES_DIR):
